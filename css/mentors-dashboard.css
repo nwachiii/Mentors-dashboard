@@ -368,6 +368,7 @@ svg {
 }
 
 @media (max-width: 600px) {
+
 	.row1 {
 		width: 100%;
 	}
@@ -376,20 +377,30 @@ svg {
 		width: 100%;	
 	}
 
-	.row3, .row4 {
+	.row3 {
 		margin-top: 4em;
+		width: 100%;
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: 1fr 1fr;
+		grid-row-gap: 1em;
 	}
+
+	 .row4 {
+	 	margin-top: 6em;
+	 	display: block;
+	 }
 
 	.filter-wrap, .export-wrap {
 		margin-left: 20px;
-}
+	}
 
 	.dashBox {
 		flex-direction: column;
-		justify-content: space-around;
+		/*justify-content: space-around;
 		align-items: center;
 		flex-wrap: nowrap;
-		flex: 0 0 100% !important;		
+		flex: 0 0 100% !important;*/		
 		padding: 15px;
 		margin-bottom: 40px;
 		margin-left: minmax(2rem, 8rem);
@@ -399,4 +410,26 @@ svg {
 		transition: 0.89s ease;
 	}
 
+}
+
+@media (max-width: 414px){
+	.row3 {
+		display: none;
+	}
+	
+	/*.m-btn {
+		margin-bottom: 1em;
+	}*/
+	
+	.input {
+		width: 100%;
+	}
+
+	.mentor-email {
+		flex-wrap: wrap;
+	}
+
+	.mentors_dashboard-aside {
+		display: none;
+	}
 }
