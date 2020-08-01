@@ -335,3 +335,9 @@ svg {
 	line-height: 24px;*/
 	letter-spacing: -0.28px;
 }
+
+@media (max-width: 850px){
+	.mentors_dashboard-aside {
+		display: none;
+}
+}
