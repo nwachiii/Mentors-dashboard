@@ -174,7 +174,7 @@ svg {
 	box-sizing: border-box;
 	outline: none;
 	cursor: pointer;
-	margin-right: 14px;
+	margin-right:  14px;
 	transition: background-color .7s;
 }
 
@@ -187,7 +187,6 @@ svg {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	flex-wrap: wrap;
 	width: 100%;
 }
 
@@ -197,7 +196,7 @@ svg {
 	width: 100%;
 	/*padding-top: 24px;
 	padding-bottom: 22px;*/
-	padding-left: 20px;	
+	padding: 0 20px;	
 	background: #FFFFFF;
 	box-shadow: 2px 8px 20px rgba(181, 181, 181, 0.2);
 	margin-bottom: 20px;
@@ -338,7 +337,35 @@ svg {
 }
 
 @media (max-width: 1100px){
-	.mentors_dashboard-aside {
+/*	.mentors_dashboard-aside {
 		display: none;
+	}
+*/ 
+
+	.mentors_dashboard-aside {
+		border-left: none;
+		border-top: 1px solid #6C63FF;
 }
+   .dashB-wrapper {
+		display: block;
+  }
+
+   .dashBox {
+   	justify-content: space-between;
+   }
+}
+
+@media (max-width: 500px) {
+	.dashBox {
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: center;
+		padding: 20px auto !important;
+		width: 100%;
+	}
+
+	.row4 {
+		align-items: center;
+		margin: 0 auto;
+	}
 }
