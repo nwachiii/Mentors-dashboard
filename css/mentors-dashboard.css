@@ -113,6 +113,36 @@ svg {
 	margin-left: 40px;
 }
 
+/* Dropdown content (hidden by default) */
+/*.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #9272C2;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}*/
+
+/* Links inside the dropdown */
+/*.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}*/
+
+/* Add a grey background color to dropdown links on hover */
+/*.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+ Show the dropdown menu on hover 
+.drop_down-btn:hover .dropdown-content {
+  display: block;
+}*/
+
 .export-wrap {
 	display: flex;
 	/*justify-content: space-between;*/
@@ -148,7 +178,7 @@ svg {
 }
 
 .m-btn:hover, .btn-active {
-	background-color: #9272C2;;
+	background-color: #9272C2;
 	color: #FFFFFF;
 }
 
