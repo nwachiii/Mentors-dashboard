@@ -37,7 +37,7 @@ svg {
 
 .mentors_dashboard-main {
 	width: 100%;
-	padding: 27.5px 27.5px;
+	padding: 55px 27.5px;
 }
 
 .mentors_dashboard-main > div {
@@ -62,12 +62,12 @@ svg {
 
 .notif-svg {
 	margin-left: auto;
+	justify-content: flex-end;
 }
 
 .row2{
 	display: flex;
 	align-items: center;
-	flex-wrap: wrap;
 	align-content: center;
 	width: 85.1%;
 	height: 56px;
@@ -178,7 +178,7 @@ svg {
 	transition: background-color .7s;
 }
 
-.m-btn:hover{
+.m-btn:hover, .btn-active{
 	background-color: #9272C2;
 	color: #FFFFFF;
 }
@@ -290,12 +290,12 @@ svg {
 	border-left: 1px solid #6C63FF;
 }
 
-.mentors_dashboard-aside p {
+.aside-title{
 	font-family:'Open Sans', sans-serif;
 	font-style: normal;
 	font-weight: bold;
-	/*font-size: 24px;
-	line-height: 64px;*/
+	font-size: 24px;
+	/*line-height: 64px;*/
 	color: #9272C2;
 	margin-bottom: 10px;
 }
@@ -319,21 +319,21 @@ svg {
 }
 
 .mentor-det > p{
-	/*font-size: 16px;
-	line-height: 24px;*/
+	font-size: 16px;
+	/*line-height: 24px;*/
 	letter-spacing: -0.28px;
 }
 
 .det-value {
 	font-family: 'Poppins', sans-serif;
 	font-style: normal;
+	font-weight: 600;
 	color: #573F7B;
 }
 
 .det-value > p {
-	font-weight: 600;
-	/*font-size: 16px;
-	line-height: 24px;*/
+	font-size: 16px;
+	/*line-height: 24px;*/
 	letter-spacing: -0.28px;
 }
 
