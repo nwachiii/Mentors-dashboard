@@ -177,7 +177,7 @@ svg {
 	transition: background-color .7s;
 }
 
-.m-btn:hover, .btn-active {
+.m-btn:hover{
 	background-color: #9272C2;
 	color: #FFFFFF;
 }
