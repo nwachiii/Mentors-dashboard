@@ -22,6 +22,10 @@ a {
 	outline: none;
 }
 
+svg {
+	cursor: pointer;
+}
+
 .dashB-wrapper {
 	display: grid;
 	grid-template-columns: 51.181% 28.472%;
@@ -33,7 +37,7 @@ a {
 
 .mentors_dashboard-main {
 	width: 100%;
-	padding: 55px 27.5px;
+	padding: 27.5px 27.5px;
 }
 
 .mentors_dashboard-main > div {
@@ -46,6 +50,16 @@ a {
 	height: 65px;
 }
 
+.row1 > p {
+	font-family: 'Open Sans', sans-serif;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 24px;
+	/*line-height: 64px;*/
+	/*align-self: center;*/
+	color: #9272C2;
+}
+
 .notif-svg {
 	margin-left: auto;
 }
@@ -54,8 +68,6 @@ a {
 	display: flex;
 	align-items: center;
 	align-content: center;
-	justify-content: space-between;
-	flex-wrap: wrap;
 	width: 85.1%;
 	height: 56px;
 }
@@ -67,7 +79,7 @@ a {
 }
 
 .input {
-	width: 100%;
+	width: 336px;
 	border-radius: 5px;
     padding: 10px;
     outline: none;
@@ -82,26 +94,32 @@ a {
 
 .filter-wrap {
 	display: flex;
-	justify-content: space-between;
+	/*justify-content: space-between;*/
 	width: 115px;
 	height: 28px;
 }
 
-.filter-wrap, .export-wrap p {
+.filter-wrap>p, .export-wrap>p {
 	font-family: 'Open Sans', sans-serif;
 	font-style: normal;
 	font-weight: 600;
-	font-size: 16px;
-	line-height: 25px;
+	/*font-size: 16px;
+	line-height: 25px;*/
 	color: #7E5AE3;
+	margin: 0 5px;
+}
+
+.filter-wrap, .export-wrap {
+	margin-left: 40px;
 }
 
 .export-wrap {
 	display: flex;
-	justify-content: space-between;
+	/*justify-content: space-between;*/
 	width: 96px;
 	height: 28px;
 }
+
 
 .row3 {
 	display: flex;
@@ -115,6 +133,7 @@ a {
 	font-family: 'Open Sans', sans-serif;
 	font-style: normal;
 	font-weight: 600;
+	font-size: 16px;
 	color: #9272C2;
 	background-color: #FFFFFF;
 	padding: 13px 5px 18px 5px;
@@ -125,6 +144,7 @@ a {
 	outline: none;
 	cursor: pointer;
 	margin-right: 14px;
+	transition: background-color .7s;
 }
 
 .m-btn:hover, .btn-active {
@@ -144,8 +164,8 @@ a {
 	display: flex;
 	align-items: center;
 	width: 100%;
-	padding-top: 24px;
-	padding-bottom: 22px;
+	/*padding-top: 24px;
+	padding-bottom: 22px;*/
 	padding-left: 20px;	
 	background: #FFFFFF;
 	box-shadow: 2px 8px 20px rgba(181, 181, 181, 0.2);
@@ -159,8 +179,8 @@ a {
 	font-style: normal;
 	font-weight: 500;
 	font-size: 18px;
-	line-height: 60px;
-	letter-spacing: -0.28px;
+	/*line-height: 60px;
+	letter-spacing: -0.28px;*/
 	color: #573F7B;
 	margin-right: 25px;
 }
@@ -171,31 +191,39 @@ a {
 	font-family: 'Poppins', sans-serif;
 	font-style: normal;
 	font-weight: normal;
-	font-size: 18px;
+	/*font-size: 18px;
 	line-height: 27px;
-	letter-spacing: -0.28px;
+	letter-spacing: -0.28px;*/
 	color: #573F7B;
+	margin: 31px 10px 31px 0;
 }
 
 .status1 {
 	width: 74px;
 	height: 25px;
+}
+
+.status1 a {
 	font-family: 'Open Sans', sans-serif;
 	font-style: normal;
 	font-weight: 600;
 	font-size: 18px;
-	line-height: 25px;
+	/*line-height: 25px;*/
 	color: #7E5AE3;
 }
 
 .status2 {
 	width: 65px;
 	height: 25px;
+	margin: 32px 0 32px 13px;
+}
+
+.status2 a {
 	font-family: 'Open Sans', sans-serif;
 	font-style: normal;
 	font-weight: 600;
 	font-size: 18px;
-	line-height: 25px;
+	/*line-height: 25px;*/
 	color: #F8444F;
 }
 
@@ -235,10 +263,10 @@ a {
 	font-family:'Open Sans', sans-serif;
 	font-style: normal;
 	font-weight: bold;
-	font-size: 24px;
-	line-height: 64px;
+	/*font-size: 24px;
+	line-height: 64px;*/
 	color: #9272C2;
-	margin-bottom: 15px;
+	margin-bottom: 10px;
 }
 
 .det-wrap {
@@ -248,26 +276,32 @@ a {
 
 .det-wrap > div {
 	display: grid;
-	grid-template-columns: 2fr 2fr;
-	margin: 15px 0;
+	grid-template-columns: 1fr 1fr;
+	margin: 10px 0;
 }
 
 .mentor-det{
 	font-family: 'Poppins', sans-serif;
 	font-style: normal;
 	font-weight: normal;
-	letter-spacing: -0.28px;
 	color: #573F7B;
+}
+
+.mentor-det > p{
+	/*font-size: 16px;
+	line-height: 24px;*/
+	letter-spacing: -0.28px;
 }
 
 .det-value {
 	font-family: 'Poppins', sans-serif;
 	font-style: normal;
-	font-weight: 600;
-	font-size: 16px;
-	line-height: 24px;
-	display: flex;
-	align-items: center;
-	letter-spacing: -0.28px;
 	color: #573F7B;
+}
+
+.det-value > p {
+	font-weight: 600;
+	/*font-size: 16px;
+	line-height: 24px;*/
+	letter-spacing: -0.28px;
 }
