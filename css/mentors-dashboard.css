@@ -420,16 +420,25 @@ svg {
 	/*.m-btn {
 		margin-bottom: 1em;
 	}*/
+
+	.row4 {
+	 	margin-top: 4em;
+	 }
 	
 	.input {
 		width: 100%;
 	}
 
-	.mentor-email {
-		flex-wrap: wrap;
-	}
-
 	.mentors_dashboard-aside {
 		display: none;
+	}
+
+	.mentor-email>p {
+		font-size: 14px;
+		text-align: center;
+	}
+
+	.filter-wrap {
+		margin-left: 0;
 	}
 }
